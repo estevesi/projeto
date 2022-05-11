@@ -1,0 +1,17 @@
+---
+layout: page
+title: About
+permalink: /about/
+---
+
+{% include youtube.html video="https://www.youtube.com/embed/6N1X5XffuUA" %}
+
+<ul>
+    {% for item in site.data.nav %}
+    <li>{{ item.title }}
+        <ul>
+            <li><a>{{ item.name }}</a></li>
+        </ul>
+    </li>
+    {% endfor %}
+</ul>

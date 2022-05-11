@@ -1,0 +1,111 @@
+$background-color: #EEE;
+$yellow-color:#C09E07;
+$white-color: #CCC;
+$blue-color:#57A0D7;
+$grey-color: #7B8794;
+$white2-color:white;
+
+@function ratio($width, $height){
+    $ze: $height / $width;
+    @return percentage ($ze);
+}
+
+.mod {
+
+    .image{
+        padding-bottom: ratio(16, 9);
+        position: relative;
+        background: $background-color;
+        margin-bottom: 12px;
+        overflow: hidden;
+    
+        img {
+            display: block;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0; 
+        }
+        
+        img.resrc {
+            height: 100%;
+            object-fit: cover;
+        }
+       
+    }
+    .title{
+        font-size: 22px;
+        line-height: 26px;
+        font-weight: 700;
+        margin-top: 5px;
+        margin-bottom: 8px;
+
+        .obs-icon-photogallery {
+            width: 23px;
+            height: 23px;
+            vertical-align: -3px;
+            margin-right: 4px;}
+    
+        .premium-suffix {
+            color: $yellow-color;}
+    }
+ 
+    .meta {
+        font-size: 12px;
+        line-height: 16px;
+        margin-bottom: 6px;
+        .rating{
+            .star {
+                color: $white-color;
+                font-size: 18px;
+                margin-left: -4px;
+
+                .stars-1 .star:nth-child(-n+1) {
+                    color: $blue-color;
+                }
+                .stars-2 .star:nth-child(-n+2) {
+                    color: $blue-color;
+                }
+                .stars-3 .star:nth-child(-n+3) {
+                    color: $blue-color;
+                }
+                .stars-4 .star:nth-child(-n+4) {
+                    color: $blue-color;
+                }
+                .stars-5 .star:nth-child(-n+5) {
+                    color: $blue-color;
+                }
+            }
+        }
+        .flag {
+            padding: 4px 4px 3px 5px;
+            text-transform: uppercase;
+            display: inline-block;
+            margin-right: 6px;
+
+            .updating {
+                background: $grey-color;
+                color: $white2-color;
+            }
+            .updated {
+                background: $background-color;
+            }
+        }
+        .button > span {
+            display: block;
+        }
+        .obs-icon-share {
+            width: 11px;
+            height: 11px;
+        }
+        .obs-icon-share + p {
+            display: inline;
+        }
+    }
+    .lead {
+        font-size: 15px;
+        line-height: 22px;
+    }
+}
