@@ -16,8 +16,15 @@
             {%- endif -%}
             </li>
             {%- if site.email -%}
-            <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+            <li><a class="u-email" href="mailto:{{ site.email }}" >{{ site.email }}</a></li>
             {%- endif -%}
+            {%- if site.behance -%}
+            <li><a class="u-behance" href="{{ site.behance }}" target="_blank">{{ site.behance }}</a></li>
+            {%- endif -%}
+            {%- if site.behance -%}
+            <li><a class="u-linkedin" href="{{ site.linkedin }}" target="_blank" >{{ site.linkedin }}</a></li>
+            {%- endif -%}
+            
         </ul>
       </div>
 
