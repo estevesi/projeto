@@ -20,14 +20,20 @@
 
 title: Inês Esteves
 email: inesaesteves0@gmail.com
-behance: https://www.behance.net/inesteves
-linkedin: https://www.linkedin.com/in/inesaesteves/
+behance: inesteves
+linkedin_username: inesaesteves
+github_username: estevesi
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 baseurl: "/projeto" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
+collections:
+  work:
+    output: true
+    permalink: /work/:path
 
 # permalink
 permalink: /:categories/:year/:title:output_ext
