@@ -1,4 +1,3 @@
-
 /** Scroll down arrow*/
 *,
 :after,
@@ -11,8 +10,6 @@
 section {
   height: 100vh;
   width: 100%;
-  display: table;
-  
 }
 
 .scroll-down {
@@ -74,3 +71,18 @@ section {
     transform: translateY(-5px);
   }
 }
+
+/** Latest projects*/
+
+.latest-projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: $spacing-unit;
+}
+
+.img-home {
+    width: 460px;
+}
+       

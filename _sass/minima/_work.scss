@@ -1,0 +1,12 @@
+.work-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: $spacing-unit;
+}
+
+.work {
+    width: 460px;
+}
+

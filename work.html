@@ -6,12 +6,14 @@ title: Work
 
 <h1>Check some of my most recent projects!</h1>
 
+<div class="work-container">
     {% for work in site.work %}
     <div class="work">
         <a href="{{ work.url | relative_url }}">
             <h2>{{ work.title }}</h2>
         </a>
-        <p>{{ work.description }}</p>
         <img src="{{ work.thumbnail | relative_url  }}" alt="{{ work.title }}">
+        <p>{{ work.description }}</p>
     </div>
     {% endfor %}
+</div>
