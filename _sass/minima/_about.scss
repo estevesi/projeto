@@ -1,10 +1,25 @@
 .timeline-container{
-  padding: $spacing-unit 200px 0 $spacing-unit*2;
+  width: 60vw;
 }
+
+.about-title{
+  margin-top: $spacing-unit *3;
+}
+
+.about-text{
+  width: 80vw;
+}
+
 .timeline-body {
   position: relative;
   border-radius: 0 ;
   padding: 5px 0;
+
+.timeline-item{
+  h3{
+    color: $second-color;
+  }
+}
 
   &:after {
     // Left Border
@@ -26,8 +41,8 @@
       width: 20px;
       height: 20px;
       border-radius: 50%;
-      border: 4px solid $grey-color;
-      background-color: $grey-color;
+      border: 4px solid $second-color;
+      background-color: $second-color;
       position: absolute;
       left: -12px;
       top: 8px;
@@ -37,12 +52,12 @@
     .content {
       margin: 40px;
       padding-bottom: 20px;
-      border-bottom: 1px dashed $grey-color;
+      border-bottom: 1px dashed $second-color;
 
       .date {
         margin-top: -5px;
         margin-bottom: 15px;
-        color: $grey-color;
+        color: $second-color;
       }
     }
   }

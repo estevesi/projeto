@@ -5,8 +5,13 @@ title2: About me
 permalink: /about/
 ---
 
-{% include about/timeline.html %}
+<div class="about-text">
+    <h4>I am a motivated young designer focused on creating the best experiences and solutions through creative problem solving. </h4>
+    <h4>Currently strengthening my product design skills with a postgraduate course in Digital Experience Design.</h4>
+</div>
 
+<h2 class="about-title">Education</h2>
+{% include about/timeline.html %}
 <ul>
     {% for item in site.data.nav %}
     <li>{{ item.title }}
@@ -16,3 +21,5 @@ permalink: /about/
     </li>
     {% endfor %}
 </ul>
+
+<h2 class="about-title">Skills</h2>

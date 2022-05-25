@@ -10,3 +10,17 @@
     width: 460px;
 }
 
+.back-button{
+    input{
+        border: none;
+        padding: 0;
+        width: $spacing-unit *2;
+        height: $spacing-unit *2;
+        text-decoration: underline;
+
+        &:hover{
+        color: $second-color;
+        }
+    }
+    
+}

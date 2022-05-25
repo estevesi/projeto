@@ -17,6 +17,9 @@
   line-height: $base-line-height * $base-font-size * 2.25;
   margin-bottom: 0;
   float: left;
+    &:hover{
+    text-decoration: none;
+    }
 }
 
 .site-nav {
@@ -176,4 +179,6 @@
     }
   }
 }
+
+
 

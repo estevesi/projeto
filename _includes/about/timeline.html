@@ -1,11 +1,9 @@
 <div class="timeline-container">
-    <p>I am a motivated young designer focused on creating the best experiences and solutions through creative problem solving. Currently strengthening my product design skills with a postgraduate course in Digital Experience Design.</p>
-    <h2>Education</h2>
     <div class="timeline-body">
       {% for item in site.data.timeline %}
         <div class="timeline-item">
           <div class="content">
-            <h2>{{ item.title }}</h2>
+            <h3>{{ item.title }}</h3>
             <h6 class="date">{{ item.from }} — {{ item.to }}</h6>
             <p>{{ item.description }}</p>
           </div>
