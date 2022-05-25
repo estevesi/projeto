@@ -1,3 +1,4 @@
+
 /** Scroll down arrow*/
 *,
 :after,
@@ -12,21 +13,29 @@ section {
   width: 100%;
 }
 
+section {
+  h1{
+    font-size: 4rem;
+    padding-top: 15vh;
+    text-decoration: underline;
+  }
+}
+
 .scroll-down {
   opacity: 1;
   -webkit-transition: all .5s ease-in 3s;
   transition: all .5s ease-in 3s;
+  left: 50%;
+  transform: translate(0, -50%);
 }
 
 .scroll-down {
   position: absolute;
   bottom: $spacing-unit *2;
-  left: 50%;
-  margin-left: -16px;
   display: block;
   width: 64px;
   height: 64px;
-  background-size: 14px auto;
+  background-size: auto;
   z-index: 2;
   -webkit-animation: bounce 2s infinite 2s;
   animation: bounce 2s infinite 2s;
@@ -35,18 +44,16 @@ section {
   transform: scale(1)
 }
 
-
 .scroll-down:before {
-    position: absolute;
-    top: calc(50% - 8px);
-    left: calc(50% - 6px);
+    position: relative;
     transform: rotate(-45deg);
     display: block;
-    width: 32px;
-    height: 32px;
+    width: 2.5rem;
+    height: 2.5rem;
     content: "";
-    border: 2px solid black;
-    border-width: 0px 0 2px 2px;
+    border: 0.125px solid black;
+    border-width: 0 0 0.25rem 0.25rem ;
+    border-radius: 5%;
 }
 
 @keyframes bounce {
@@ -81,7 +88,11 @@ section {
     gap: $spacing-unit;
 }
 
-.img-home {
-    width: 450px;
+#projects-section {
+      padding-top: 50px;
 }
-       
+
+.img-home {
+    width: 40vw;
+}
+  

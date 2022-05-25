@@ -3,10 +3,10 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    gap: $spacing-unit;
+    gap: $spacing-unit *2;
 }
 
 .work {
-    width: 450px;
+    width: 460px;
 }
 
