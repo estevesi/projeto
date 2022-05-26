@@ -1,4 +1,3 @@
-
 .footer-wrapper {
         max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
         max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
@@ -9,62 +8,70 @@
         @extend %clearfix;
 }
 
- .site-footer {
-    border-top: 1px solid $grey-color-light;
-    padding: $spacing-unit 0;
-  }
-  
-  .footer-heading {
-    @include relative-font-size(1.125);
-    margin-bottom: $spacing-unit ;
-  }
-  
-  .contact-list,
-  .social-media-list {
-    list-style: none;
-    margin-left: $spacing-unit ;
+.site-footer {
+  border-top: 1px solid $grey-color-light;
+  padding: $spacing-unit 0;
+
+  a{
     color: $second-color;
+    
+    &:hover{
+      color: $brand-color;
+    }
   }
-  
-  .footer-col-wrapper {
-    @include relative-font-size(0.9375);
-    color: $second-color;
-    margin-left: -$spacing-unit ;
-    @extend %clearfix;
-  }
-  
-  .footer-col {
-    float: left;
-    margin-bottom: $spacing-unit;
-    padding-left: $spacing-unit;
-  }
-  
-  .footer-col-1 {
-    width: -webkit-calc(35% - (#{$spacing-unit} ));
-    width:         calc(35% - (#{$spacing-unit} ));
-  }
-  
-  .footer-col-2 {
-    width: -webkit-calc(20% - (#{$spacing-unit} ));
-    width:         calc(20% - (#{$spacing-unit} ));
-  }
-  
-  .footer-col-3 {
-    width: -webkit-calc(45% - (#{$spacing-unit} ));
-    width:         calc(45% - (#{$spacing-unit} ));
-  }
-  
+}
+
+.footer-heading {
+  @include relative-font-size(1.125);
+  margin-bottom: $spacing-unit ;
+}
+
+address {
+  color: $text-color;
+}
+
+.copyright{
+  font-size: $small-font-size;
+  color: $text-color;
+}
+
+
+.contact-list,
+.social-media-list {
+  list-style: none;
+  margin-left: $spacing-unit ;
+  color: $second-color;
+}
+
+.footer-col-wrapper {
+  @include relative-font-size(0.9375);
+  color: $second-color;
+  margin-left: -$spacing-unit ;
+  @extend %clearfix;
+}
+
+.footer-col {
+  float: left;
+  margin-bottom: $spacing-unit;
+}
+
+.footer-col-1 {
+  width: -webkit-calc(35% - (#{$spacing-unit} ));
+  width:         calc(35% - (#{$spacing-unit} ));
+}
+
+.footer-col-2 {
+  width: -webkit-calc(30% - (#{$spacing-unit} ));
+  width:         calc(30% - (#{$spacing-unit} ));
+}
+
+
 
 @include media-query($on-laptop) {
     .footer-col-1,
     .footer-col-2 {
       width: -webkit-calc(50% - (#{$spacing-unit} ));
       width:         calc(50% - (#{$spacing-unit} ));
-    }
-  
-    .footer-col-3 {
-      width: -webkit-calc(100% - (#{$spacing-unit} ));
-      width:         calc(100% - (#{$spacing-unit} ));
     }
   }
   
@@ -75,5 +82,4 @@
       width:         calc(100% - (#{$spacing-unit} ));
     }
   }
-  
   

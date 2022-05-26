@@ -2,20 +2,23 @@
   
   <div class="footer-wrapper">
 
-  
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
         <ul class="contact-list">
-          <li class="p-name">
-            {%- if site.author -%}
-              {{ site.author | escape }}
-            {%- else -%}
-              {{ site.title | escape }}
-            {%- endif -%}
+            <li class="p-name">
+              <a href="{{site.url}}/projeto/index.html">
+              {%- if site.author -%}
+                {{ site.author | escape }}
+              {%- else -%}
+                {{ site.title | escape }}
+              {%- endif -%}
+              </a>
             </li>
             {%- if site.email -%}
             <li><a class="u-email" href="mailto:{{ site.email }}" >{{ site.email }}</a></li>
             {%- endif -%}
+            <li> <address> Lisbon, Portugal </address> </li>
+            <li class="copyright">&copy; Copyright 2022</li>
             
         </ul>
       </div>
@@ -23,10 +26,7 @@
       <div class="footer-col footer-col-2">
         {%- include social.html -%}
       </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{- site.description | escape -}}</p>
-      </div>
+      
     </div>
 
   </div>
