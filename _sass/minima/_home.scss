@@ -1,107 +1,136 @@
-/** Scroll down arrow*/
-*,
-:after,
-:before {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-section {
-  width: 100%;
-}
-
-#first-section{
-  height: 100vh;;
-}
-
-section {
+section{
   h1{
-    font-size: 4rem;
-    padding-top: 15vh;
+    font-size: 2rem;
     text-decoration: underline;
+    padding-top: $spacing-unit*2;
   }
-}
-
-.scroll-down {
-  opacity: 1;
-  -webkit-transition: all .5s ease-in 3s;
-  transition: all .5s ease-in 3s;
-  left: 50%;
-  transform: translate(0, -50%);
-}
-
-.scroll-down {
-  position: absolute;
-  bottom: $spacing-unit *2;
-  display: block;
-  width: 64px;
-  height: 64px;
-  background-size: auto;
-  z-index: 2;
-  -webkit-animation: bounce 2s infinite 2s;
-  animation: bounce 2s infinite 2s;
-  -webkit-transition: all .2s ease-in;
-  transition: all .2s ease-in;
-  transform: scale(1)
-}
-
-.scroll-down:before {
-    position: relative;
-    transform: rotate(-45deg);
-    display: block;
-    width: 2.5rem;
-    height: 2.5rem;
-    content: "";
-    border: 0.125px solid black;
-    border-width: 0 0 0.25rem 0.25rem ;
-    border-radius: 5%;
-}
-
-@keyframes bounce {
-  0%,
-  100%,
-  20%,
-  50%,
-  80% {
-    -webkit-transform: translateY(0);
-    -ms-transform: translateY(0);
-    transform: translateY(0);
-  }
-  40% {
-    -webkit-transform: translateY(-10px);
-    -ms-transform: translateY(-10px);
-    transform: translateY(-10px);
-  }
-  60% {
-    -webkit-transform: translateY(-5px);
-    -ms-transform: translateY(-5px);
-    transform: translateY(-5px);
-  }
-}
-
-/** Latest projects*/
-
-.latest-projects {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: $spacing-unit;
 }
 
 #projects-section {
-      padding-top: 50px;
-      a{
-        text-decoration: underline;
-        color: $second-color;
-        &:hover{
-          color: $brand-color;
-        }
-      }
+  padding-top: 50px;
+
+  a{
+    text-decoration: underline;
+    color: $second-color;
+    font-size: $small-font-size;
+    &:hover{
+      color: $brand-color;
+    }
+  }
+  .img-home{
+    width: 100%;
+  }
+  h2{
+    font-size: 1rem;
+  }
 }
 
-.img-home {
-    width: 40vw;
+.latest-projects {
+  img{
+    margin-bottom: $spacing-unit;
+  }
 }
-  
+
+
+
+
+@media only screen and (min-width:640px) {
+
+    /** Scroll down arrow*/
+    *,
+    :after,
+    :before {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    section {
+      width: 100%;
+    }
+
+    #first-section{
+      height: 100vh;;
+    }
+
+    section {
+      h1{
+        font-size: 4rem;
+        padding-top: 15vh;
+      }
+    }
+
+    .scroll-down {
+      opacity: 1;
+      -webkit-transition: all .5s ease-in 3s;
+      transition: all .5s ease-in 3s;
+      left: 50%;
+      transform: translate(0, -50%);
+    }
+
+    .scroll-down {
+      position: absolute;
+      bottom: $spacing-unit *2;
+      display: block;
+      width: 64px;
+      height: 64px;
+      background-size: auto;
+      z-index: 2;
+      -webkit-animation: bounce 2s infinite 2s;
+      animation: bounce 2s infinite 2s;
+      -webkit-transition: all .2s ease-in;
+      transition: all .2s ease-in;
+      transform: scale(1)
+    }
+
+    .scroll-down:before {
+        position: relative;
+        transform: rotate(-45deg);
+        display: block;
+        width: 2.5rem;
+        height: 2.5rem;
+        content: "";
+        border: 0.125px solid black;
+        border-width: 0 0 0.25rem 0.25rem ;
+        border-radius: 5%;
+    }
+
+    @keyframes bounce {
+      0%,
+      100%,
+      20%,
+      50%,
+      80% {
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+      }
+      40% {
+        -webkit-transform: translateY(-10px);
+        -ms-transform: translateY(-10px);
+        transform: translateY(-10px);
+      }
+      60% {
+        -webkit-transform: translateY(-5px);
+        -ms-transform: translateY(-5px);
+        transform: translateY(-5px);
+      }
+    }
+    #projects-section{
+    
+      h2{
+      font-size: 2rem;
+      margin-bottom: $spacing-unit ;
+      }
+    }
+
+    /** Latest projects*/
+
+    .latest-projects {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: $spacing-unit;
+    }
+    
+}
+

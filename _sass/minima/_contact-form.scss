@@ -1,4 +1,4 @@
-
+/**
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   color: $second-color;
   font-size: $small-font-size;
@@ -36,6 +36,9 @@ input:focus::-ms-placeholder, textarea:focus::-ms-placeholder {
 }
 
 /* on hover placeholder */
+
+/*
+
 
 input:hover::-webkit-input-placeholder, textarea:hover::-webkit-input-placeholder {
   font-size: $small-font-size;
@@ -82,7 +85,7 @@ input:hover:focus::-ms-placeholder, textarea:hover:focus:-ms-placeholder {
 
 input {
   font-size: $small-font-size;
-  width: 470px;
+  width: 280px;
   height: 50px;
   padding: 0px 15px 0px 15px;
   
@@ -103,8 +106,7 @@ input {
 }
 
 textarea {
-  width: 470px;
-  max-width: 470px;
+  width: 280px;
   height: 110px;
   max-height: 110px;
   padding: 15px;
@@ -128,7 +130,7 @@ textarea {
 }
 
 #submit {
-  width: 200px;
+  width: 00px;
   background-color: $second-color;
   padding: 0;
   margin: $spacing-unit *0.5 0px 0px 0px;
@@ -142,3 +144,25 @@ textarea {
       background-color: $brand-color;
     }
   }
+
+*/
+
+  input[type=text], input[type=email], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    
+    
+    
+  }
+
+  @media only screen and (min-width:640px) {
+    .contact-form{
+     width: 40%;
+    } 
+  }
+

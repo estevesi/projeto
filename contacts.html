@@ -6,11 +6,17 @@ title2: Let's talk!
 
 <h2>You can follow my work on <a href="https://www.behance.net/inesteves" target="_blank"> <u>Behance</u> </a> and <a href="https://www.linkedin.com/in/inesaesteves/" target="_blank"> <u>Linkedin</u> </a> <br> or write me a message if you prefer ;) </h2>
 
-<form id="contact-form" class="topBefore">
-		
-		  <input id="name" type="text" placeholder="Name">
-		  <input id="email" type="text" placeholder="e-mail">
-		  <textarea id="message" type="text" placeholder="Message"></textarea>
-  <input id="submit" type="submit" value="Send message">
-  
-</form>
+<div class="contact-form">
+    <form netlify action="/contact/confirmation">
+      <label for="name">Name
+        <input autofocus type="text" name="name" id="name">
+      </label>
+      <label for="email">Email
+        <input required type="email" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+      </label>
+      <label for="message">Message
+        <textarea required name="message" id="message"></textarea>
+       </label>
+       <input class="button" type="submit" value="Send Message">
+    </form>
+</div>
