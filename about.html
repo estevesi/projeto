@@ -2,24 +2,27 @@
 layout: page
 title: About 
 title2: About me
-permalink: /about/
 ---
 
-<div class="about-text">
-    <h4>I am a motivated young designer focused on creating the best experiences and solutions through creative problem solving. </h4>
-    <h4>Currently strengthening my product design skills with a postgraduate course in Digital Experience Design.</h4>
-</div>
+<section class="about-intro">
+    <div class="about-text">
+        <h2>Hi! My name is Inês Esteves! I am a junior product designer based in Lisbon. My main goal is to create the best experiences and solutions through creative problem solving. </h2>
+        <a href="#ed-skills" address="true">Know more about me</a>
+    </div>
+</section>
 
-<h2 class="about-title">Education</h2>
-{% include about/timeline.html %}
-<ul>
-    {% for item in site.data.nav %}
-    <li>{{ item.title }}
-        <ul>
-            <li><a>{{ item.name }}</a></li>
-        </ul>
-    </li>
-    {% endfor %}
-</ul>
-
-<h2 class="about-title">Skills</h2>
+<section id="ed-skills">
+    <h2 class="about-title">Education</h2>
+    {% include about/timeline.html %}
+    <ul>
+        {% for item in site.data.nav %}
+        <li>{{ item.title }}
+            <ul>
+                <li><a>{{ item.name }}</a></li>
+            </ul>
+        </li>
+        {% endfor %}
+    </ul>
+    <h2 class="about-title">Skills</h2>
+    {% include about/skill-bar.html %}
+</section>

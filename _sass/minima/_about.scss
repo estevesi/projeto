@@ -1,9 +1,22 @@
+.about-intro{
+  height: 100vh;
+
+  a{
+    text-decoration: underline;
+    color: $second-color;
+
+    &:hover{
+      color: $brand-color;
+    }
+  }
+}
+
 .timeline-container{
   width: 60vw;
 }
 
 .about-title{
-  margin-top: $spacing-unit *3;
+  margin-top: $spacing-unit ;
 }
 
 .about-text{
@@ -60,5 +73,104 @@
         color: $second-color;
       }
     }
+  }
+}
+
+.about-title{
+  padding-top: $spacing-unit;
+}
+
+//Skills
+
+.skills{
+  width: 20vw;
+  position:relative;
+  float:left;
+    
+  ul { 
+    padding-top: $spacing-unit;
+    & > li { 
+      margin-bottom: $spacing-unit *1.5; 
+      background: $grey-color-light; 
+      height:6px;
+      list-style: none;
+      & em {
+        font-size: $base-font-size;
+        position:relative; 
+        top:-$spacing-unit;
+      }
+      & span { 
+        height: inherit;
+        background-color: $grey-color;
+        background: $second-color;
+        position:absolute;
+      }
+    }
+  }
+
+  .html5 { 
+    width:90%;  
+    animation:html5 2s ease-out;
+  }
+  .css3 { 
+    width:80%;
+    animation:css3 2s ease-out; 
+  }
+  .js { 
+    width:50%;  
+    animation:js 2s ease-out;
+  }
+  .jquery { 
+    width:60%;  
+    animation:jquery 2s ease-out;
+  }
+  .wordpress { 
+    width:50%;  
+    animation:wordpress 2s ease-out;
+  }
+  .magento { 
+    width:60%;  
+    animation:magento 2s ease-out;
+  }
+  .photoshop { 
+    width:90%;  
+    animation:photoshop 2s ease-out;
+  }
+  .illustrator { 
+    width:80%;  
+    animation:illustrator 2s ease-out;
+  }
+
+  @keyframes html5 { 
+    0%  { width:0px;} 
+    100%{ width:90%;}  
+  }
+  @keyframes css3 {
+    0%  { width:0px;} 
+    100%{ width:80%;}  
+  }
+  @keyframes js {
+    0%  { width:0px;}
+    100%{ width:50%;}
+  }
+  @keyframes jquery {
+    0%  { width:0px;}
+    100%{ width:60%;}
+  }
+  @keyframes wordpress {
+    0%  { width:0px;}
+    100%{ width:50%;}
+  }
+  @keyframes magento {
+    0%  { width:0px;}
+    100%{ width:60%;}
+  }
+  @keyframes photoshop {
+    0%  { width:0px;} 
+    100%{ width:90%;}  
+  }
+  @keyframes illustrator {
+    0%  { width:0px;} 
+    100%{ width:80%;}  
   }
 }
