@@ -1,168 +1,29 @@
-/**
-input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
-  color: $second-color;
-  font-size: $small-font-size;
+
+input[type=text], input[type=email], textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
 }
 
-input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
-  color: $second-color;
-}
-
-input::-moz-placeholder, textarea::-moz-placeholder {
-  color: $second-color;
-  font-size: $small-font-size;
-}
-
-input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
-  color: $second-color;
-}
-
-input::placeholder, textarea::placeholder {
-  color: $grey-color;
-  font-size: $small-font-size;
-}
-
-input:focus::placeholder, textarea:focus::placeholder {
-  color: $second-color;
-}
-
-input::-ms-placeholder, textarea::-ms-placeholder {
-  color: $grey-color;
-  font-size: $small-font-size;
-}
-
-input:focus::-ms-placeholder, textarea:focus::-ms-placeholder {
-  color: $grey-color;
-}
-
-/* on hover placeholder */
-
-/*
-
-
-input:hover::-webkit-input-placeholder, textarea:hover::-webkit-input-placeholder {
-  font-size: $small-font-size;
-}
-
-input:hover:focus::-webkit-input-placeholder, textarea:hover:focus::-webkit-input-placeholder {
-  color: transparent;
-}
-
-input:hover::-moz-placeholder, textarea:hover::-moz-placeholder {
-  color: transparent;
-  font-size: $small-font-size;
-}
-
-input:hover:focus::-moz-placeholder, textarea:hover:focus::-moz-placeholder {
-  color: transparent;
-  border: none;
-}
-
-input:hover::placeholder, textarea:hover::placeholder {
-  color: transparent;
-  font-size: $small-font-size;
-}
-
-input:hover:focus::placeholder, textarea:hover:focus::placeholder {
-  color: transparent;
-}
-
-input:hover::placeholder, textarea:hover::placeholder {
-  color: $grey-color-light;
-  font-size: $small-font-size;
-}
-
-input:hover:focus::-ms-placeholder, textarea:hover:focus:-ms-placeholder {
-  color: $grey-color;
-}
-
-
-#contact-form {
-  position: relative;
-  width: 500px;
-  margin-top: $spacing-unit*4;
-}
-
-input {
-  font-size: $small-font-size;
-  width: 280px;
-  height: 50px;
-  padding: 0px 15px 0px 15px;
-  
-  background: transparent;
-  border: none;
-  border-bottom: solid 1px $text-color;
-
-  transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-
-    &:hover {
-      background: transparent;
-      color: $second-color;
-    }
-    
-}
-
-textarea {
-  width: 280px;
-  height: 110px;
-  max-height: 110px;
-  padding: 15px;
-
-  background: transparent;
-  color: $text-color;
-  font-size: $small-font-size;
-  font-family: 'Dm Sans';
-
-  border: none;
-  border-bottom: solid 1px $text-color;
-
-  transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-
-    &:hover{
-      color: $brand-color;
-    }
-}
-
-#submit {
-  width: 00px;
+.button{
   background-color: $second-color;
-  padding: 0;
-  margin: $spacing-unit *0.5 0px 0px 0px;
-  font-size: $small-font-size;
-  color: white;
-  outline:none;
-  cursor: pointer;
-  border: none;
-   
-    &:hover{
-      background-color: $brand-color;
-    }
+  width: 12rem;
+  height: 2.5rem;
+  color:white;
+  border:none;
+  &:hover{
+    background-color: $brand-color;
   }
+}
 
-*/
 
-  input[type=text], input[type=email], textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    
-    
-    
-  }
-
-  @media only screen and (min-width:640px) {
-    .contact-form{
-     width: 40%;
-    } 
-  }
+@media only screen and (min-width:640px) {
+  .contact-form{
+    width: 40%;
+  } 
+}
 

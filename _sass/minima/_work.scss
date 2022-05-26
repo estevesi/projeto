@@ -23,6 +23,24 @@
     
 }
 
+
+.project-header{
+    margin-top: $spacing-unit;
+}
+
+//PROJETOS
+@media only screen and (min-width:640px) {
+
+.project-content{
+    display: flex;
+}
+.project-text{
+    margin-right: $spacing-unit;
+}
+
+}
+
+
 @media only screen and (min-width:640px) {
     .work-container {
         display: grid;
@@ -31,9 +49,3 @@
 
     }
 }
-
-
-//PROJETOS
-
-
-
