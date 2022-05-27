@@ -1,14 +1,13 @@
 ---
 layout: projects
-title: FBAUL's website redesign
+title: FBAUL's website 
 description: Redesign of the FBAUL's website taking into account the specific needs of international students.
 thumbnail: assets/img/fbaul.jpg
-subtitle: Deck is a surfboard online shop.
-text: Considering the specificity of the product, as well as the need for a high monetary investment, it is important to provide enough information about it. The purchase should be possible for someone buying a surfboard for the first time as well as for someone who does it frequently.
+subtitle: International students hub
+tag: UX/UI Design
+text: FBAUL's current website does not meet the needs of international students nor does it reflect the creative personality that distinguishes this school. The challenge was to improve the user experience for international students and allow them to access all the necessary information quickly and effectively.
 img-1: assets/img/fbaul.jpg
-alt-1: "fisadhcj"
+alt-1: Mockups of the redesign of the mobile version of the FBAUL website
+link: https://www.behance.net/gallery/139995747/FBAULs-website-redesign-International-students
 ---
 
-<h2>International students hub</h2>
-<p>FBAUL's current website does not meet the needs of international students nor does it reflect the creative personality that distinguishes this school.</p>
-<p>The challenge was to improve the user experience for international students. Allow them to access all the necessary information quickly and effectively.</p>

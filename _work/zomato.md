@@ -1,11 +1,13 @@
 ---
 layout: projects
 title: Zomato events
-description: Organising an event no longer has to be a nightmare! Zomato Events allows to create, manage and share new events with your friends while considering everyone's preferences.
+description: Organising an event no longer has to be a nightmare! 
 thumbnail: assets/img/zomato.jpg
-subtitle: Deck is a surfboard online shop.
-text: Considering the specificity of the product, as well as the need for a high monetary investment, it is important to provide enough information about it. The purchase should be possible for someone buying a surfboard for the first time as well as for someone who does it frequently.
+subtitle: Plan your group events. Hassle-free.
+tag: UX/UI Design
+text: Choosing a restaurant for an event can be a nightmare. All guests have different tastes and preferences. “How can we make the host’s journey stress-free while considering everyone’s preferences?” We started by looking at the Zomato app to deeply understand how it works and manages the featured content. The only reference found to Groups was a list of restaurants that fit best this type of events. Zomato Events allows to create, manage and share new events with your friends while considering everyone's preferences.
 img-1: assets/img/zomato.jpg
-alt-1: "fisadhcj"
+alt-1: Mockups from zomato mobile app and zomato events feature.
+link: https://www.behance.net/gallery/139205411/Zomato-Events
 
 ---

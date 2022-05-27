@@ -7,17 +7,20 @@ layout: default
 
   <header class="project-header">
     <h1 class="project-title">{{ page.title | escape }}</h1>
+    <span class="project-tag">{{ page.tag | escape }}</span>
   </header>
 
   <div class="project-content">
     <div class="project-text">
+      <h5>{{ page.description | escape }}</h5>
       <h2>{{ page.subtitle }}</h2>
       <p>{{ page.text }}</p>
+      <a href="{{ page.link }}" target="_blank">Know more about this project here</a>  
     </div>
     <div class="project-img">
       <img class="img-1" src="{{ page.img-1 | relative_url }}" alt="{{ page.alt-1 }}">
-    </div>
-    
+    </div>  
+
 </div>
 
 </article>

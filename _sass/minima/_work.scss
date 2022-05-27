@@ -5,9 +5,25 @@
 
     img{
         width: 100%;
+        margin-bottom: $spacing-unit /2;
+    }
+    h2{
+        margin-top: $spacing-unit;
     }
 }
 
+
+@media only screen and (min-width:700px) {
+    .work-container {
+        display: grid;
+        gap: $spacing-unit;
+        grid-template-columns: 1fr 1fr;
+
+    }
+}
+
+
+//PROJETOS
 .back-button{
     input{
         border: none;
@@ -16,48 +32,65 @@
         height: $spacing-unit *2;
         text-decoration: underline;
 
-        &:hover{
+        :hover{
         color: $second-color;
         }
     }
     
 }
 
-
 .project-header{
     margin-top: $spacing-unit;
-}
-
-//PROJETOS
-@media only screen and (min-width:640px) {
-
-.project-content{
-    display: flex;
-}
-.project-text{
-    margin-right: $spacing-unit;
-}
-
-}
-
-.work-container{
-    h3{
-        margin-top: $spacing-unit;
-    }
-}
-
-.project-header{
+    
     h1{
-        font-size: 3rem;
+        font-size: 2.5rem;
+        color: $second-color;
+    }
+}
+
+.project-tag{
+    background-color: $second-color;
+    color: white;
+    padding: $spacing-unit/4;
+    border-radius: 0.7rem;
+    font-size: $small-font-size;
+}
+
+.project-text{
+    h2{
+    margin-top: $spacing-unit;    
+    }
+    h5{
+        color: $second-color;
+        margin-top: $spacing-unit /2;
+    }
+    a{
+        text-decoration: underline;
+        color: $second-color;
+        font-size: $small-font-size;
+       
+        :hover{
+        color: $brand-color;
+       }
+    }
+}
+
+@media only screen and (min-width:900px) {
+
+    .project-content{
+    display: flex;
+    flex-direction: row;
+
+    img{
+        min-width: 31.25rem;
+    }
+    
+    }
+    .project-text{
+        margin-right: $spacing-unit;
+      
     }
 }
 
 
-@media only screen and (min-width:640px) {
-    .work-container {
-        display: grid;
-        gap: $spacing-unit;
-        grid-template-columns: 1fr 1fr;
 
-    }
-}
