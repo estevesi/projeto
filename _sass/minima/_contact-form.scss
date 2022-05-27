@@ -1,23 +1,24 @@
 
 input[type=text], input[type=email], textarea {
   width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  padding: $spacing-unit *0.70;
+  border: 0.063rem solid #ccc;
+  border-radius: 0.125rem;
   box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
+  margin-top: $spacing-unit/4;
+  margin-bottom: $spacing-unit/2;
+}
+
+.contact-form{
+  margin-top: $spacing-unit;
 }
 
 .button{
   background-color: $second-color;
-  width: 12rem;
-  height: 2.5rem;
+  height: 3rem;
+  width: 100%;
   color:white;
   border:none;
-  &:hover{
-    background-color: $brand-color;
-  }
 }
 
 
@@ -25,5 +26,12 @@ input[type=text], input[type=email], textarea {
   .contact-form{
     width: 40%;
   } 
+
+  .button{
+    width: 12rem;
+    &:hover{
+      background-color: $brand-color;
+    }
+  }
 }
 
